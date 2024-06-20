@@ -8,6 +8,8 @@
         <strong>{{ contact.name }}</strong><br>
         Email: {{ contact.email }}<br>
         Phone: {{ contact.phone }}<br>
+        <a href="{{ url_for('main.edit_contact', contact_id=contact.id) }}" class="button edit-button">Edit</a>
+        <a href="{{ url_for('main.delete_contact', contact_id=contact.id) }}" class="button delete-button">Delete</a>
     </li>
     {% endfor %}
 </ul>
