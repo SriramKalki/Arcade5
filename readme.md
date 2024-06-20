@@ -1,0 +1,1 @@
+Use pip install -r requirements.txt! Then do 'flask run' to run a local server.
